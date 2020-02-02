@@ -1,0 +1,28 @@
+// Base Styles
+@import 'base/colors';
+@import 'base/reset';
+@import 'base/typography';
+
+// Component Styles
+@import 'components/header';
+@import 'components/main';
+@import 'components/recent-work';
+@import 'components/image-zoom.scss';
+@import 'components/footer.scss';
+
+.dark {
+  color: $white !important;
+  background: $black;
+
+  a {
+    color: $white;
+  }
+}
+
+body {
+  font-size: 62.5%;
+  // overflow-x: hidden;
+  color: $black;
+  background: $white;
+  transition: all 1s ease-in;
+}

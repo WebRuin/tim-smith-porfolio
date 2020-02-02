@@ -1,0 +1,189 @@
+@import 'variables';
+@import 'colors';
+@import 'typography';
+
+.recent-work {
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+
+  a {
+    color: $black;
+    font-size: $recent-work-a;
+  }
+
+  i {
+    font-size: calc($recent-work-a - 25px);
+  }
+
+  article {
+    margin-bottom: 2rem;
+    p {
+      font-size: $article-p;
+    }
+
+    .work-images {
+      display: flex;
+      justify-content: start;
+      padding-top: 1rem;
+
+      figure:first-child {
+        margin-right: 3rem;
+      }
+
+      figcaption {
+        padding: 10px;
+        color: $white;
+        text-align: center;
+        border-bottom: 0;
+        background: rgba($black, 0.9);
+        font-weight: bold;
+      }
+    }
+
+    .tags {
+      display: flex;
+      justify-content: start;
+
+      .tag {
+        color: $white;
+        padding: 10px;
+        background: $red;
+        margin: 2px 2px 0 0;
+
+        i {
+          color: $white;
+          font-size: 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .recent-work {
+    padding-top: 1rem;
+
+    a {
+      font-size: 5vw;
+    }
+
+    article p {
+      font-size: 4.5vw;
+    }
+
+    .work-images {
+      flex-wrap: wrap;
+      justify-content: center !important;
+
+      figure:first-child {
+        margin-bottom: 1rem;
+        margin-right: 0 !important;
+      }
+    }
+
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .recent-work {
+    padding-top: 1rem;
+
+    a {
+      font-size: 5vw;
+    }
+
+    article p {
+      font-size: 4.5vw;
+    }
+
+    .work-images {
+      flex-wrap: wrap;
+      justify-content: center !important;
+
+      figure:first-child {
+        margin-bottom: 1rem;
+        margin-right: 0 !important;
+      }
+    }
+
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .recent-work {
+    padding-top: 1rem;
+
+    a {
+      font-size: 5vw;
+    }
+
+    article p {
+      font-size: 4.5vw;
+    }
+
+    .work-images {
+      flex-wrap: wrap;
+      justify-content: center !important;
+
+      figure:first-child {
+        margin-bottom: 1rem;
+        margin-right: 0 !important;
+      }
+    }
+
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .recent-work {
+    padding-top: 1rem;
+
+    a {
+      font-size: 5vw;
+    }
+
+    article p {
+      font-size: 4.5vw;
+    }
+
+    .work-images {
+      flex-wrap: wrap;
+      justify-content: center !important;
+
+      figure:first-child {
+        margin-bottom: 1rem;
+        margin-right: 0 !important;
+      }
+    }
+
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+  }
+}

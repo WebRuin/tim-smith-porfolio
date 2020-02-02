@@ -1,7 +1,7 @@
 {
-  "name": "web",
-  "version": "2.0.0",
-  "description": "",
+  "name": "tim-smiths-portfolio",
+  "description": "Next.js version on my portfolio",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -9,13 +9,31 @@
     "start": "next start",
     "export": "npm run build && next export"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WebRuin/next-tim-smith.git"
+  },
+  "keywords": [
+    "nextjs",
+    "react",
+    "blog",
+    "portfolio",
+    "seo"
+  ],
+  "author": "Tim Smith <tim.smith.hdg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebRuin/next-tim-smith/issues"
+  },
+  "homepage": "https://github.com/WebRuin/next-tim-smith#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@sanity/block-content-to-react": "^2.0.6",
     "@sanity/client": "^0.141.6",
     "@sanity/image-url": "^0.140.12",
+    "@webdeb/next-styles": "^1.0.5",
     "express": "^4.17.1",
     "groq": "^0.141.5",
     "next": "^9.0.3",

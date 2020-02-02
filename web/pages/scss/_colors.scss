@@ -1,0 +1,9 @@
+$black: #111;
+$white: #eee;
+$red: rgb(136, 0, 0);
+$green: #1aac53;
+
+@media (prefers-color-scheme: dark) {
+  $black: $white;
+  $white: $black;
+}

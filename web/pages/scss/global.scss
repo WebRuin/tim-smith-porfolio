@@ -1,0 +1,20 @@
+@import 'reset';
+@import 'colors';
+@import 'typography';
+
+.dark {
+  color: $white !important;
+  background: $black;
+
+  a {
+    color: $white;
+  }
+}
+
+body {
+  font-size: 62.5%;
+  // overflow-x: hidden;
+  color: $black;
+  background: $white;
+  transition: all 1s ease-in;
+}

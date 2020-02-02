@@ -1,0 +1,242 @@
+@import "colors";
+@import "variables";
+
+footer {
+  max-width: 1000px;
+  text-align: center;
+  padding: 0 $footer-padding 2rem $footer-padding;
+
+  p {
+    font-size: 1.25rem;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .npm,
+  .git {
+    color: $white;
+    width: 35vw;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 11px;
+    border: 2px solid $red;
+    justify-content: space-between;
+
+    pre {
+      .comment {
+        color: $green;
+      }
+
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      text-align: left;
+      border-radius: 8px;
+      background: $black;
+      font-family: monospace;
+    }
+
+    .left {
+      color: $red;
+      font-size: 5rem;
+      margin-right: 1rem;
+      text-shadow: 1px 1px 0px $black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right {
+      width: 300px;
+
+      pre {
+        .comment {
+          color: $green;
+        }
+        padding: 0.75rem;
+        font-size: 1rem;
+        text-align: left;
+        border-radius: 8px;
+        background: $black;
+        font-family: monospace;
+      }
+    }
+  }
+
+  .git {
+    margin-right: 1rem;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+    width: 100%;
+    padding: 1.25rem 0.75rem !important;
+    background: $red;
+
+    p {
+      padding: 1.25rem;
+      font-size: 1.25rem;
+      color: $white !important;
+    }
+
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .npm,
+    .git {
+      width: initial;
+
+      .left {
+        color: $white;
+        font-size: 2rem;
+      }
+
+      .right {
+        width: 277px;
+
+        pre {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  footer {
+    width: 100%;
+    padding: 1.25rem 0.75rem !important;
+    background: $red;
+
+    p {
+      padding: 1.25rem;
+      font-size: 1.25rem;
+      color: $white !important;
+    }
+
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .npm,
+    .git {
+      width: initial;
+
+      .left {
+        color: $white;
+        font-size: 2rem;
+      }
+
+      .right {
+        width: 277px;
+
+        pre {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  footer {
+    width: 100%;
+    padding: 1.25rem 0.75rem !important;
+    background: $red;
+
+    p {
+      padding: 1.25rem;
+      font-size: 1.25rem;
+      color: $white !important;
+    }
+
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .npm,
+    .git {
+      width: initial;
+
+      .left {
+        color: $white;
+        font-size: 2rem;
+      }
+
+      .right {
+        width: 277px;
+
+        pre {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  footer {
+    width: 100%;
+    padding: 1.25rem 0.75rem !important;
+    background: $red;
+
+    p {
+      padding: 1.25rem;
+      font-size: 1.25rem;
+      color: $white !important;
+    }
+
+    .wrapper {
+      flex-wrap: wrap;
+    }
+
+    .npm,
+    .git {
+      width: initial;
+
+      .left {
+        color: $white;
+        font-size: 2rem;
+      }
+
+      .right {
+        width: 277px;
+
+        pre {
+          width: 100%;
+          padding: 0.5rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

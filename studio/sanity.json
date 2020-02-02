@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "my-blog"
+    "name": "tim-smith-portfolio"
   },
   "api": {
-    "projectId": "0wopf0m0",
+    "projectId": "0cqfg4vu",
     "dataset": "production"
   },
   "plugins": [
@@ -14,8 +14,15 @@
     "@sanity/default-login",
     "@sanity/desk-tool"
   ],
-  "parts": [{
-    "name": "part:@sanity/base/schema",
-    "path": "./schemas/schema.js"
-  }]
+  "env": {
+    "development": {
+      "plugins": ["@sanity/vision"]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
 }

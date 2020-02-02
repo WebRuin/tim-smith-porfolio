@@ -1,0 +1,69 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /opt/firefox/firefox:/opt/firefox/firefox:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tithos/Android/Sdk/tools:/home/tithos/Android/Sdk/tools/bin:/home/tithos/Android/Sdk/platform-tools:/home/tithos/Android/Sdk/emulator:/home/tithos/Android/Sdk/tools:/home/tithos/Android/Sdk/tools/bin:/home/tithos/Android/Sdk/platform-tools:/home/tithos/Android/Sdk/emulator
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  10.15.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/tithos/Web Projects/tim-smith-porfolio/web/package.json: Unexpected string in JSON at position 271
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "tim-smiths-portfolio",
+    "description": "Next.js version on my portfolio",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "dev": "next",
+      "build": "next build",
+      "start": "next start",
+      "export": "npm run build && next export"
+    }
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/WebRuin/next-tim-smith.git"
+    },
+    "keywords": [
+      "nextjs",
+      "react",
+      "blog",
+      "portfolio",
+      "seo"
+    ],
+    "author": "Tim Smith <tim.smith.hdg@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/WebRuin/next-tim-smith/issues"
+    },
+    "homepage": "https://github.com/WebRuin/next-tim-smith#readme",
+    "dependencies": {
+      "@sanity/block-content-to-react": "^2.0.6",
+      "@sanity/client": "^0.141.6",
+      "@sanity/image-url": "^0.140.12",
+      "express": "^4.17.1",
+      "groq": "^0.141.5",
+      "next": "^9.0.3",
+      "react": "^16.9.0",
+      "react-dom": "^16.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

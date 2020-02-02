@@ -1,0 +1,117 @@
+@import 'base/colors';
+@import 'base/variables';
+
+*::selection {
+  color: $white;
+  background: $red;
+}
+
+main {
+  padding: 0 $site-padding 0 $site-padding;
+  max-width: 1000px;
+  margin-bottom: 2rem;
+
+  p,
+  a {
+    font-size: $main-p;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: $main-h3-padding;
+  }
+
+  .section-header {
+    font-size: $section-header-p;
+  }
+
+  .bold {
+    font-weight: 400;
+  }
+
+  span {
+    color: $red;
+  }
+
+  a {
+    color: $red;
+    text-decoration: none;
+
+    &:hover {
+      color: $red;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    padding: 0 1.5rem;
+
+    .section-header {
+      font-size: 5.5vw;
+    }
+
+    p,
+    a {
+      font-size: 4.5vw;
+    }
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    padding: 0 1.5rem;
+
+    .section-header {
+      font-size: 5.5vw;
+    }
+
+    p,
+    a {
+      font-size: 4.5vw;
+    }
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  main {
+    padding: 0 1.5rem;
+
+    .section-header {
+      font-size: 5.5vw;
+    }
+
+    p,
+    a {
+      font-size: 4.5vw;
+    }
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  main {
+    padding: 0 1.5rem;
+
+    .section-header {
+      font-size: 5.5vw;
+    }
+
+    p,
+    a {
+      font-size: 4.5vw;
+    }
+  }
+}

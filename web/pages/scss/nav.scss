@@ -1,0 +1,167 @@
+@import "colors";
+nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -15rem;
+  z-index: 8;
+  transition: right 0.75s ease-in;
+  background: rgba($white, 0.8);
+
+  ul {
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    li {
+      position: relative;
+
+      a {
+        position: relative;
+        width: 15rem;
+        height: 20vh;
+        color: $white;
+        background: $red;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+
+        &:hover {
+          color: #222;
+          background: rgba(#eee, 0.8);
+        }
+      }
+    }
+  }
+}
+
+@keyframes openAnimation-menu1 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu2 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -80px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu3 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -60px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu4 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -40px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu5 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -20px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.open {
+  right: 0;
+
+  .menu1 {
+    animation: openAnimation-menu1 1s ease-in;
+  }
+  .menu2 {
+    animation: openAnimation-menu2 1s ease-in;
+  }
+  .menu3 {
+    animation: openAnimation-menu3 1s ease-in;
+  }
+  .menu4 {
+    animation: openAnimation-menu4 1s ease-in;
+  }
+  .menu5 {
+    animation: openAnimation-menu5 1s ease-in;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    display: none;
+  }
+
+  .toggle {
+    right: 1rem !important;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    display: none;
+  }
+
+  .toggle {
+    right: 1rem !important;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  nav {
+    display: none;
+  }
+
+  .toggle {
+    right: 1rem !important;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  nav {
+    display: none;
+  }
+
+  .toggle {
+    right: 1rem !important;
+  }
+}

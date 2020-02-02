@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins|Work+Sans:200|Quicksand&display=swap);
+@import "colors";
+
+$article-p: 2vw;
+$main-p: 3vw;
+$recent-work-p: 3vw;
+$section-header-p: 3.25vw;
+
+$recent-work-a: 2vw;
+
+i,
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 100;
+}
+
+i {
+  color: $red;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  color: $red;
+  font-size: 6vw;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 5.9vw;
+}
+
+h3 {
+  font-size: 2.5vw;
+  padding-bottom: 1rem;
+}
+
+h4 {
+  font-size: 3.5vw;
+}
+
+.section-header {
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 2.25vw;
+  padding-bottom: 1rem;
+}
+
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  $article-p: 5vw;
+  $main-p: 5vw;
+  $recent-work-p: 5vw;
+  $section-header-p: 6vw;
+
+  $recent-work-a: 5vw;
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 8.9vw;
+  }
+
+  h3 {
+    font-size: 5.5vw;
+    margin-bottom: 0 !important;
+  }
+
+  h4 {
+    font-size: 4.5vw;
+  }
+
+  h5 {
+    font-size: 3.5vw;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 8.9vw;
+  }
+
+  h3 {
+    font-size: 5.5vw;
+    margin-bottom: 0 !important;
+  }
+
+  h4 {
+    font-size: 4.5vw;
+  }
+
+  h5 {
+    font-size: 3.5vw;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  $article-p: 5vw;
+  $main-p: 5vw;
+  $recent-work-p: 5vw;
+  $section-header-p: 6vw;
+
+  $recent-work-a: 5vw;
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 8.9vw;
+  }
+
+  h3 {
+    font-size: 5.5vw;
+    margin-bottom: 0 !important;
+  }
+
+  h4 {
+    font-size: 4.5vw;
+  }
+
+  h5 {
+    font-size: 3.5vw;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  $article-p: 5vw;
+  $main-p: 5vw;
+  $recent-work-p: 5vw;
+  $section-header-p: 6vw;
+
+  $recent-work-a: 5vw;
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2 {
+    font-size: 8.9vw;
+  }
+
+  h3 {
+    font-size: 5.5vw;
+    margin-bottom: 0 !important;
+  }
+
+  h4 {
+    font-size: 4.5vw;
+  }
+
+  h5 {
+    font-size: 3.5vw;
+  }
+}
