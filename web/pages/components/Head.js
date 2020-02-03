@@ -1,14 +1,14 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const HtmlHead = () => (
   <Head>
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
       key="viewport"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
       content="Tim Smith | A developer portfolio for a great Front-End Web Developer"
