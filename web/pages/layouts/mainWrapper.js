@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import Header from "../components/Header";
-import HtmlHead from "../components/Head";
-import Footer from "../components/Footer";
+import Header from '../components/Header';
+import HtmlHead from '../components/Head';
+import Footer from '../components/Footer';
 
 const Index = props => {
   return (
     <>
       <HtmlHead />
       <Header />
-      {props.children}
+      <main role="main">{props.children}</main>
       <Footer />
     </>
   );

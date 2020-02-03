@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 nav {
   height: 100vh;
   position: fixed;
@@ -10,8 +10,8 @@ nav {
 
   ul {
     height: inherit;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    justify-content: stretch;
     flex-direction: column;
 
     li {
@@ -20,7 +20,7 @@ nav {
       a {
         position: relative;
         width: 15rem;
-        height: 20vh;
+        height: 100%;
         color: $white;
         background: $red;
         text-decoration: none;
@@ -54,7 +54,7 @@ nav {
     left: 0;
   }
   50% {
-    left: -80px;
+    left: -85.8px;
   }
   100% {
     left: 0;
@@ -65,7 +65,7 @@ nav {
     left: 0;
   }
   50% {
-    left: -60px;
+    left: -71.6px;
   }
   100% {
     left: 0;
@@ -76,7 +76,7 @@ nav {
     left: 0;
   }
   50% {
-    left: -40px;
+    left: -57.4px;
   }
   100% {
     left: 0;
@@ -87,7 +87,29 @@ nav {
     left: 0;
   }
   50% {
-    left: -20px;
+    left: -43.2px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu6 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -29px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes openAnimation-menu7 {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: -14.8px;
   }
   100% {
     left: 0;
@@ -111,6 +133,12 @@ nav {
   }
   .menu5 {
     animation: openAnimation-menu5 1s ease-in;
+  }
+  .menu6 {
+    animation: openAnimation-menu6 1s ease-in;
+  }
+  .menu6 {
+    animation: openAnimation-menu7 1s ease-in;
   }
 }
 

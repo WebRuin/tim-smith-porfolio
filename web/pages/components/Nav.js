@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import '../scss/nav.scss';
 
@@ -21,30 +22,30 @@ class Nav extends React.Component {
     return (
       <nav className="navigation" role="navigation" aria-label="Main">
         <ul>
-          <li>
-            <a className="menu1" href="#top">
-              Top
-            </a>
+          <li className="menu1">
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
-          <li>
-            <a className="menu2" href="#recent-work">
-              Recent Work
-            </a>
+          <li className="menu2">
+            <a href="#top">Top</a>
           </li>
-          <li>
-            <a className="menu3" href="#why-hire-me">
-              Why Hire Me?
-            </a>
+          <li className="menu3">
+            <Link href="/blog">
+              <a>Blog</a>
+            </Link>
           </li>
-          <li>
-            <a className="menu4" href="#pricing">
-              Pricing
-            </a>
+          <li className="menu4">
+            <a href="#recent-work">Recent Work</a>
           </li>
-          <li>
-            <a className="menu5" href="#accolades">
-              Accolades
-            </a>
+          <li className="menu5">
+            <a href="#why-hire-me">Why Hire Me?</a>
+          </li>
+          <li className="menu6">
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li className="menu7">
+            <a href="#accolades">Accolades</a>
           </li>
         </ul>
       </nav>
