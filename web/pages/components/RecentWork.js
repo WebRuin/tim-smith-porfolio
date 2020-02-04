@@ -4,6 +4,8 @@ import client from '../../client';
 
 import RecentWorkArticle from './RecentWorkArticle';
 
+import '../scss/_typography.scss';
+import '../scss/main.scss';
 import '../scss/recent-work.scss';
 
 import '../scss/global.scss';
@@ -11,8 +13,8 @@ import '../scss/global.scss';
 function RecentWork(props) {
   const { recentWork = [] } = props;
   return (
-    <section id="recent-work" class="recent-work">
-      <h4 class="section-header">Recent Work</h4>
+    <section id="recent-work" className="recent-work">
+      <h4 className="section-header">Recent Work</h4>
       {recentWork.map(
         ({
           _id,

@@ -26,3 +26,9 @@ body {
   background: $white;
   transition: all 1s ease-in;
 }
+
+input,
+button,
+submit {
+  border: none;
+}

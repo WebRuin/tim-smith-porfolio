@@ -1,7 +1,8 @@
-@import "colors";
-@import "variables";
+@import 'colors';
+@import 'variables';
+@import 'typography';
 
-header {
+.header {
   max-width: 1000px;
   padding: 6rem $site-padding $header-bottom-padding $site-padding;
   position: relative;
@@ -19,7 +20,16 @@ header {
 
     .fa-sun {
       color: #fffd68;
+      font-size: 1.5rem;
+      margin-top: -0.5rem;
     }
+
+    .fa-moon {
+      font-size: 1.5rem;
+      margin-top: -0.5rem;
+      margin-right: -1rem;
+    }
+
     .hide {
       display: none;
     }
@@ -41,7 +51,7 @@ header {
     i {
       background-color: $red;
       border-radius: 2px;
-      content: "";
+      content: '';
       display: block;
       width: 100%;
       height: 4px;

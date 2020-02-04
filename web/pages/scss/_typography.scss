@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins|Work+Sans:200|Quicksand&display=swap);
-@import "colors";
+@import 'colors';
 
 $article-p: 2vw;
 $main-p: 3vw;
@@ -12,7 +12,7 @@ i,
 h1,
 h2,
 h3 {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 100;
 }
 
@@ -21,7 +21,7 @@ i {
 }
 
 p {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1 {
@@ -54,8 +54,16 @@ h5 {
 
 h4,
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
+}
+
+a {
+  margin: 0 8px;
+}
+
+span i {
+  font-weight: 400;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
